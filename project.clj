@@ -34,7 +34,7 @@
     [gov.nasa.earthdata/cmr-exchange-query "0.2.0-SNAPSHOT"]
     [gov.nasa.earthdata/cmr-http-kit "0.1.5-SNAPSHOT"]
     [gov.nasa.earthdata/cmr-mission-control "0.1.0-SNAPSHOT"]
-    [metosin/ring-http-response "0.9.0"]
+    [metosin/ring-http-response "0.9.1"]
     [org.clojure/clojure "1.9.0"]
     [org.clojure/core.async "0.4.474"]
     [org.clojure/core.cache "0.7.1"]]
@@ -48,7 +48,7 @@
       :source-paths ["test"]}
     :security {
       :plugins [
-        [lein-nvd "0.5.5"]]
+        [lein-nvd "0.5.6"]]
       :source-paths ^:replace ["src"]
       :nvd {
         :suppression-file "resources/security/false-positives.xml"}
@@ -179,4 +179,3 @@
       ["clean"]
       ["build-jar"]
       ["deploy" "clojars"]]})
-
