@@ -111,7 +111,7 @@
     (and (not (:inherited link-data))
          (= const/datafile-link-rel rel))))
 
-(def OPENDAP_LOWERCASE
+(def opendap-lowercase
   "All lowercase OPeNDAP."
   "opendap")
 
@@ -125,7 +125,7 @@
   (let [lower-case-title (some-> link-data :title string/lower-case)]
     (and (not (:inherited link-data))
          lower-case-title
-         (string/includes? lower-case-title OPENDAP_LOWERCASE))))
+         (string/includes? lower-case-title opendap-lowercase))))
 
 (defn extract-granule-links
   "Returns an OPeNDAP link and a data download link from the granule metadata file.
